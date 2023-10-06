@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './normalize.css';
-import Home from './pages/Home/Home';
+import './scss/normalize.scss';
+import Home from './pages/fr/Home/Home';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
