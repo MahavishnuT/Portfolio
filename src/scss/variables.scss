@@ -1,0 +1,8 @@
+@mixin text-styles {
+  mix-blend-mode: difference;
+  background: transparent;
+	@-moz-document url-prefix() {
+		mix-blend-mode: unset;
+		background: transparent;
+	}
+}
