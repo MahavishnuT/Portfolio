@@ -1,0 +1,26 @@
+@import "../../scss/variables.scss";
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  h2 {
+    @include section-title;
+  }
+  span {
+    width: 60%;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .last-span {
+    margin-top: 1.7rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  button {
+    margin: 2rem 0 2rem 0;
+    padding: 1rem 3rem;
+    @include button-styles;
+  }
+}

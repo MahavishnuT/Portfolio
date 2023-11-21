@@ -1,3 +1,4 @@
+import Experience from "../../../components/Experience/Experience";
 import Landing from "../../../components/Landing/Landing";
 import Works from "../../../components/Works/Works";
 import "./home.scss";
@@ -12,6 +13,7 @@ function Home() {
       <div className="noise"></div>
       <Landing />
       <Works />
+      <Experience />
     </>
   );
 }

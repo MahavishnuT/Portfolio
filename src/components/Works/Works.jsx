@@ -18,6 +18,7 @@ import WorkCardRight from "../Work Cards/WorkCardsRight"
 function Works() {
   return (
     <section id="works">
+      <h2>Mes travaux</h2>
       <WorkCardLeft picture={wealthHealth} title="Wealth Health" text="Passer une application web interne de jQuery vers React pour améliorer les performances. Réalisation de tests avec Google Lighthouse et comparaison entre les deux versions." link="https://github.com/MahavishnuT/Projet_14" logo1={reactLogo} logo2={sassLogo} logo3={reduxLogo}/>
       <WorkCardRight picture={argentBank} title="ArgentBank" text="Création d'une application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil via l'utilisation d'une API, et en spécifier les endpoints." link="https://github.com/MahavishnuT/Projet_13" logo1={reactLogo} logo2={sassLogo} logo3={reduxLogo}/>
       <WorkCardLeft picture={sportsee} title="Sportsee" text="Réalisation d'une application web qui récupère les données de l'utilisateur via une API, pour afficher ses statistiques sportives via la librairie Javascript Recharts" link="https://github.com/MahavishnuT/Projet_12" logo1={reactLogo} logo2={sassLogo}/>

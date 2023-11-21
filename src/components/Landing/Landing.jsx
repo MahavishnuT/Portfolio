@@ -7,7 +7,7 @@ function Landing() {
         <nav className="nav-header">
           <ul>
             <li className="nav-element">
-              <a href="#my-work">Mes travaux</a>
+              <a href="#works">Mes travaux</a>
             </li>
             <li className="nav-element">
               <a href="#experience">Mon expérience</a>
