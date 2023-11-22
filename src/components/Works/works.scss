@@ -3,7 +3,6 @@
 #works {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   h2 {
     @include section-title;
   }

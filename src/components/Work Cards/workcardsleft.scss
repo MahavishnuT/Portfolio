@@ -7,9 +7,7 @@
   height: 65vh;
   margin-top: 3rem;
   .card-img {
-    border-bottom: black 1px solid;
-    border-top: black 1px solid;
-    border-right: black 1px solid;
+    outline: black 1px solid;
     height: 45vh;
     width: 45vw;
     object-fit: cover;
