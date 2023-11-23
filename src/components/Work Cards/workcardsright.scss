@@ -7,11 +7,33 @@
   height: 65vh;
   margin-top: 3rem;
   margin-left: auto;
-  .card-img {
+  .card-img_container {
+    position: relative;
+    z-index: -1;
     outline: black 1px solid;
     height: 45vh;
     width: 45vw;
-    object-fit: cover;
+    &::before,
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    &::before {
+      background-color: aqua;
+    }
+    &::after {
+      background-color: pink;
+    }
+    .card-img {
+      object-fit: cover;
+      height: 45vh;
+      width: 45vw;
+    }
   }
   .card-text {
     display: flex;

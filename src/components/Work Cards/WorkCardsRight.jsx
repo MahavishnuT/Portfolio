@@ -3,7 +3,9 @@ import "./workcardsright.scss"
 function WorkCardRight({picture, title, text, link, logo1, logo2, logo3, logo4}) {
   return (
     <div className="card-container_right">
-      <img src={picture} alt="" className="card-img" />
+      <div className="card-img_container">
+        <img src={picture} alt="" className="card-img" />
+      </div>
       <div className="card-text">
         <div className="card-text_title">{title}</div>
         <div className="card-text_description">{text}</div>
