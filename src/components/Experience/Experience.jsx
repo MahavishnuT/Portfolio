@@ -13,7 +13,7 @@ function Experience() {
       <br />
       <span className="last-span">Vous pouvez en apprendre plus en téléchargeant mon CV</span>
       <br />
-      <button><a href="Users/lisapujalte/Desktop/Projets/portfolio/src/MyCV/CV_FR_BRU.pdf" download>CV</a>
+      <button><a href="../../public/MyCV/CV_FR_BRU.pdf" download>CV</a>
       </button>
     </section>
   );

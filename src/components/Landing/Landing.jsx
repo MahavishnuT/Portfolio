@@ -10,6 +10,8 @@ function Landing() {
   const tl = useRef();
 
   useLayoutEffect(() => {
+
+    //Creation of animations for the landing page as it loads
     let ctx = gsap.context(() => {
 
       tl.current = gsap.timeline()
@@ -25,7 +27,7 @@ function Landing() {
           duration: 1,
           ease: "power3.out",
           stagger: 0.2
-        }, "-=0.2")
+        }, "-=0.4")
         .from(".hero-description", {
           y: 300,
           opacity: 0,

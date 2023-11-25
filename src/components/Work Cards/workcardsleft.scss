@@ -12,20 +12,6 @@
     height: 45vh;
     width: 45vw;
     z-index: -1;
-    .card-img_fill {
-      z-index: -1;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 100%;
-      left: 100%;
-    }
-    .card-img_fill_left_1 {
-      background-color: aqua;
-    }
-    .card-img_fill_left_2 {
-      background-color: pink;
-    }
     .card-img {
       object-fit: cover;
       height: 45vh;
@@ -66,6 +52,7 @@
         justify-content: flex-end;
         align-items: center;
         gap: 1rem;
+        z-index: -1;
         li {
           width: 2.3rem;
           height: 2.3rem;
