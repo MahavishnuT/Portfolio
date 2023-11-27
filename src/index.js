@@ -8,7 +8,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router basename="/Portfolio">
+    <Router basename={process.env.PUBLIC_URL}>
       <Home />
     </Router>
   </React.StrictMode>
