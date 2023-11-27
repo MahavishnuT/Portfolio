@@ -1,9 +1,0 @@
-@import "../../scss/variables.scss";
-
-#works {
-  display: flex;
-  flex-direction: column;
-  h2 {
-    @include section-title;
-  }
-}
