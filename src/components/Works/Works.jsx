@@ -32,7 +32,7 @@ function Works() {
     tl.current = gsap.timeline({
       scrollTrigger: {
         trigger: ".works-title",
-        start: 'top 65%',
+        start: 'top 75%',
         end: 'bottom top'
       }
     })
@@ -42,7 +42,7 @@ function Works() {
     }, {
       y: 0, 
       opacity: 1,
-      duration: 2,
+      duration: 1,
       ease: "power3.out"
     })
 

@@ -12,8 +12,8 @@ function Home() {
     <>
       <div className="noise"></div>
       <Landing />
-      <Works />
       <Experience />
+      <Works />
     </>
   );
 }

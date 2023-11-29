@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Landing() {
   const salutRef = useRef();
   const landingRef = useRef();
+  const scrollRef = useRef();
   const tl = useRef();
 
   useLayoutEffect(() => {
@@ -42,8 +43,10 @@ function Landing() {
         }, "-=0.7")
         .from(".scroll-svg", {
           opacity: 0,
-          duration: 2,
+          duration: 1, 
+          ease: "power3.out"
         })
+
 
     }, landingRef);
 
@@ -56,13 +59,10 @@ function Landing() {
         <nav className="nav-header">
           <ul>
             <li className="nav-element">
+              <a href="#experience">À propos</a>
+            </li>
+            <li className="nav-element">
               <a href="#works">Mes travaux</a>
-            </li>
-            <li className="nav-element">
-              <a href="#experience">Mon expérience</a>
-            </li>
-            <li className="nav-element">
-              <a href="#about">Qui suis-je?</a>
             </li>
           </ul>
         </nav>
@@ -76,7 +76,7 @@ function Landing() {
         <h1 className="hero-name">Tom Pujalte</h1>
         <span className="hero-description">Je suis développeur Front-End</span>
       </div>
-      <div className="scroll-svg">scroll</div>
+      <div className="scroll-svg" ref={scrollRef}>scroll</div>
     </section>
   );
 }

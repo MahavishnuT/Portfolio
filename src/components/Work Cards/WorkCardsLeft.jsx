@@ -19,7 +19,7 @@ function WorkCardLeft({picture, title, text, link, logo1, logo2, logo3, logo4}) 
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: container,
-          start: 'top 45%',
+          start: 'top 55%',
           end: 'bottom top'
         }
       })

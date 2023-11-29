@@ -37,7 +37,7 @@
       width: 100%;
       align-items: center;
       .github-button {
-        @include button-styles;
+        @include button-styles($top: 45%, $left: 80%);
         height: 2.3rem;
         width: 5rem;
         margin-right: 0rem;

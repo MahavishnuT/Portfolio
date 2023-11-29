@@ -7,19 +7,35 @@
   h2 {
     @include section-title;
   }
-  span {
+  .experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 60%;
-    margin-top: 0.5rem;
-    font-size: 1.3rem;
-  }
-  .last-span {
-    margin-top: 1.7rem;
-    text-align: center;
-    font-size: 1rem;
-  }
-  button {
-    margin: 2rem 0 2rem 0;
-    padding: 1rem 3rem;
-    @include button-styles;
+    p {
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+    .last-span {
+      margin-top: 1.7rem;
+      text-align: center;
+      font-size: 1rem;
+    }
+    button {
+      margin: 2rem 0 2rem 0;
+      padding: 1rem 3rem;
+      @include button-styles($top: 40%, $left: 70%);
+      z-index: 1;
+    }
+    .logos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .logo {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
   }
 }

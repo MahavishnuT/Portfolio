@@ -14,7 +14,7 @@
   text-decoration: underline;
 }
 
-@mixin button-styles($width: 5rem, $height: 5rem, $top: 50%, $left: 85%) {
+@mixin button-styles($width: 5rem, $height: 5rem, $top: 50%, $left: 90%) {
   position: relative;
   text-align: center;
   border: 1px solid black;
@@ -56,7 +56,7 @@
   &:hover {
     &:before,
     &:after {
-      transform: scale(7);
+      transform: scale(9);
     }
   }
 }
