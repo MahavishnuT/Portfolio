@@ -1,4 +1,5 @@
 import Experience from "../../../components/Experience/Experience";
+import Footer from "../../../components/Footer/Footer";
 import Landing from "../../../components/Landing/Landing";
 import Works from "../../../components/Works/Works";
 import "./home.scss";
@@ -14,6 +15,7 @@ function Home() {
       <Landing />
       <Experience />
       <Works />
+      <Footer />
     </>
   );
 }

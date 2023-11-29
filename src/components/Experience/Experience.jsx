@@ -1,6 +1,4 @@
 import "./experience.scss";
-import linkedinLogo from "../../logos/linkedin.png"
-import githubLogo from "../../logos/github.png"
 
 import { useRef } from "react";
 import { gsap } from "gsap";
@@ -52,8 +50,7 @@ function Experience() {
       <h2 className="experience-title">Mon expérience</h2>
       <div className="experience-wrapper">
         <p>
-          J'ai connu plusieurs parcours très différents qui m'ont permis
-          d'obtenir une grande polyvalence et une capacité d'adaptation unique. Avant de coder, je suis passé par des études en physique-chimie et en journalisme, avec un voyage en solitaire en Asie du Sud-Est qui m'a permis d'apprendre à me débrouiller seul.
+          J'ai connu plusieurs parcours très différents qui m'ont permis d'obtenir une grande polyvalence et une capacité d'adaptation unique. Avant de coder, je suis passé par des études en physique-chimie et en journalisme, avec un voyage en solitaire en Asie du Sud-Est qui m'a permis d'apprendre à me débrouiller seul.
         </p>
         <br />
         <span className="last-span">
@@ -71,8 +68,16 @@ function Experience() {
         </span>
         <br />
         <div className="logos">
-          <a href="https://www.linkedin.com/in/tom-pujalte/" className="logo" target="_blank" rel="noreferrer"><img src={linkedinLogo} alt="logo of linkedin" /></a>
-          <a href="MahavishnuT" className="logo" target="_blank" rel="noreferrer"><img src={githubLogo} alt="logo of github" /></a>
+          <button>
+            <a href="https://www.linkedin.com/in/tom-pujalte/" className="logo" target="_blank" rel="noreferrer">
+              Linkedin
+            </a>
+          </button>
+          <button>
+            <a href="https://github.com/MahavishnuT" className="logo" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </button>
         </div>
       </div>
     </section>
