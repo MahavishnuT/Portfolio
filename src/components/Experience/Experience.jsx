@@ -4,12 +4,15 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Experience() {
   const experienceRef = useRef();
   const tl = useRef();
+  const { t, i18n } = useTranslation();
+  console.log( i18n.language)
 
   useGSAP(
     () => {
@@ -47,24 +50,40 @@ function Experience() {
 
   return (
     <section id="experience" ref={experienceRef}>
-      <h2 className="experience-title">Mon expérience</h2>
+      <h2 className="experience-title">{t('experience.title')}</h2>
       <div className="experience-wrapper">
         <p>
-          J'ai connu plusieurs parcours très différents qui m'ont permis d'obtenir une grande polyvalence et une capacité d'adaptation unique. Avant de coder, je suis passé par des études en physique-chimie et en journalisme, avec un voyage en solitaire en Asie du Sud-Est qui m'a permis d'apprendre à me débrouiller seul.
+          {t('experience.text')}
         </p>
         <br />
         <span className="last-span">
-          Vous pouvez en apprendre plus en téléchargeant mon CV
+          {t('experience.cv_text')}
         </span>
         <br />
-        <button>
-          <a href="/MyCV/CV_FR_BRU.pdf" download>
-            CV
-          </a>
-        </button>
+        {i18n.language === "fr" && 
+          <button>
+              <a href="/MyCV/CV_FR_BRU.pdf" download>
+                CV
+              </a>
+          </button>
+        }
+        {i18n.language === "en" && 
+          <button>
+              <a href="/MyCV/CV_ENG_BOG_Tom_Pujalte.pdf" download>
+                Resume
+              </a>
+          </button>
+        }
+        {i18n.language === "sp" && 
+          <button>
+              <a href="/MyCV◊/CV_ESP_BOG_Tom_Pujalte.pdf" download>
+                Hoja de vida
+              </a>
+          </button>
+        }
         <br />
         <span className="last-span">
-          Vous pouvez également me retrouver sur Linkedin et GitHub
+          {t('experience.socials')}
         </span>
         <br />
         <div className="logos">

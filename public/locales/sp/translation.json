@@ -1,0 +1,29 @@
+{
+  "landing": {
+    "nav": {
+      "about": "Yo",
+      "works": "Mis proyectos"
+    },
+    "hero": {
+      "presentation": "Hola, soy",
+      "description": "Soy un desarrollador front-end"
+    }
+  },
+  "experience": {
+    "title": "Yo",
+    "text": "He conocido varios recorridos muy diferentes que me han permitido obtener una gran versatilidad y una capacidad de adaptación única. Antes de codificar, estudié física-química y periodismo, con un viaje en solitario al sudeste asiático que me permitió aprender a valerme por mí mismo. Ahora vivo en Colombia, un país que aprecio mucho, y sigo ampliando mis conocimientos sobre React.",
+    "cv_text": "Puede obtener más información descargando mi hoja de vida",
+    "cv_download": "Hoja de vida",
+    "socials": "También puede encontrarme en Linkedin y GitHub"
+  },
+  "works": {
+    "title": "Mis proyectos",
+    "wealth_health": "Cambiar una aplicación web interna de jQuery a React para mejorar el rendimiento. Realización de pruebas con Google Lighthouse y comparación entre ambas versiones. Creación e implementación de un paquete NPM para la modalidad.",
+    "argent_bank": "Crear una aplicación web que permita a los clientes de iniciar sesión y gestionar sus cuentas y perfiles mediante el uso de una API, y especificar los endpoints. Uso de MangoDB.",
+    "sportsee": "Realización de una aplicación web que recupera los datos del usuario a través de una API, para mostrar sus estadísticas deportivas a través de la librería Javascript Recharts",
+    "kasa": "Rediseño gráfico de un sitio web de alquiler de apartamentos entre particulares. Recuperación de información en una base de datos y visualización de datos dinámicos (carruseles, menús desplegables...).",
+    "petits_plats": "Uso de diferentes algoritmos para encontrar y ordenar recetas en una aplicación web. Buscar a través de una barra de navegación, o mediante el uso de ''tags''.",
+    "fisheye": "Creación de un sitio web de fotógrafos accesible para personas con discapacidad visual. Uso de un lector de pantalla durante la realización para asegurarse de que la navegación por el teclado funciona bien."
+  },
+  "contact": "Contáctame"
+}

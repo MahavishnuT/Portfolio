@@ -2,13 +2,22 @@ import "./landing.scss";
 import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
+
 gsap.registerPlugin(ScrollTrigger);
+
+const lngs = {
+  en: { nativeName: 'English' },
+  fr: { nativeName: 'French' },
+  sp: { nativeName: 'Spanish' }
+};
 
 function Landing() {
   const salutRef = useRef();
   const landingRef = useRef();
   const scrollRef = useRef();
   const tl = useRef();
+  const { t, i18n } = useTranslation();
 
   useLayoutEffect(() => {
 
@@ -46,8 +55,6 @@ function Landing() {
           duration: 1, 
           ease: "power3.out"
         })
-
-
     }, landingRef);
 
     return () => ctx.revert();
@@ -59,22 +66,29 @@ function Landing() {
         <nav className="nav-header">
           <ul>
             <li className="nav-element">
-              <a href="#experience">À propos</a>
+            {Object.keys(lngs).map((lng) => (
+            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+              {lngs[lng].nativeName}
+            </button>
+          ))}
             </li>
             <li className="nav-element">
-              <a href="#works">Mes travaux</a>
+              <a href="#experience">{t('landing.nav.about')}</a>
+            </li>
+            <li className="nav-element">
+              <a href="#works">{t('landing.nav.works')}</a>
             </li>
           </ul>
         </nav>
       </header>
       <div className="hero">
         <h2 className="hero-presentation" ref={salutRef}>
-          Salut, je suis
+          {t('landing.hero.presentation')}
         </h2>
         <h1 className="hero-name">Tom Pujalte</h1>
         <h1 className="hero-name">Tom Pujalte</h1>
         <h1 className="hero-name">Tom Pujalte</h1>
-        <span className="hero-description">Je suis développeur Front-End</span>
+        <span className="hero-description">{t('landing.hero.description')}</span>
       </div>
       <div className="scroll-svg" ref={scrollRef}>scroll</div>
     </section>

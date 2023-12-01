@@ -1,17 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./scss/normalize.scss";
-import Home from "./pages/fr/Home/Home";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
+import WrappedHome from "./Home";
 
-import "./i18n"
+import "./i18n";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router basename={process.env.PUBLIC_URL}>
-      <Home />
+      <WrappedHome />
     </Router>
   </React.StrictMode>
 );
