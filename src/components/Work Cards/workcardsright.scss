@@ -65,3 +65,32 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .card-container_right {
+    width: 85vw;
+    height: 50vh;
+    margin-top: 2rem;
+    margin-left: 0;
+    .card-img_container {
+      height: 25vh;
+      width: 85vw;
+      .card-img {
+        height: 25vh;
+        width: 85vw;
+      }
+    }
+    .card-text {
+      &_description {
+        padding-right: 0%;
+        font-size: 0.8rem;
+      }
+      &_logos_github {
+        width: 100%;
+        .github-button {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}

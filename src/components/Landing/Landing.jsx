@@ -1,5 +1,5 @@
 import "./landing.scss";
-import { useRef, useLayoutEffect } from "react";
+import { useRef, useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useTranslation } from "react-i18next";
@@ -7,9 +7,9 @@ import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const lngs = {
-  en: { nativeName: 'English' },
-  fr: { nativeName: 'French' },
-  sp: { nativeName: 'Spanish' }
+  en: { nativeName: 'en' },
+  fr: { nativeName: 'fr' },
+  es: { nativeName: 'es' }
 };
 
 function Landing() {
@@ -18,6 +18,18 @@ function Landing() {
   const scrollRef = useRef();
   const tl = useRef();
   const { t, i18n } = useTranslation();
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  };
 
   useLayoutEffect(() => {
 
@@ -44,6 +56,12 @@ function Landing() {
           duration: 1,
           ease: "power3.out"
         }, "-=0.5")
+        .from(".dropdown", {
+          y: -200,
+          opacity: 0,
+          duration: 1,
+          stagger: 0.2
+        }, "-=0.7")
         .from(".nav-element", {
           y: -200,
           opacity: 0,
@@ -64,14 +82,19 @@ function Landing() {
     <section id="landing" ref={landingRef}>
       <header>
         <nav className="nav-header">
-          <ul>
-            <li className="nav-element">
-            {Object.keys(lngs).map((lng) => (
-            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-              {lngs[lng].nativeName}
-            </button>
-          ))}
-            </li>
+          <div className="dropdown">
+            <button className="dropdown-button" onClick={toggleDropdown}>{selectedOption || i18n.resolvedLanguage}</button>
+            {isOpen && (
+              <ul className="dropdown-list">
+                {Object.keys(lngs).map((lng) => (
+                  <li key={lng} type="submit" onClick={() => { i18n.changeLanguage(lng); handleOptionClick(lngs[lng].nativeName) }}>
+                    {lngs[lng].nativeName}                    
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          <ul className="nav-header_list">
             <li className="nav-element">
               <a href="#experience">{t('landing.nav.about')}</a>
             </li>

@@ -12,7 +12,6 @@ function Experience() {
   const experienceRef = useRef();
   const tl = useRef();
   const { t, i18n } = useTranslation();
-  console.log( i18n.language)
 
   useGSAP(
     () => {
@@ -42,7 +41,6 @@ function Experience() {
             duration: 1,
             ease: "power3.out",
           }, "-=0.5")
-        
     },
     [],
     experienceRef
@@ -74,9 +72,9 @@ function Experience() {
               </a>
           </button>
         }
-        {i18n.language === "sp" && 
+        {i18n.language === "es" && 
           <button>
-              <a href="/MyCV◊/CV_ESP_BOG_Tom_Pujalte.pdf" download>
+              <a href="/MyCV/CV_ESP_BOG_Tom_Pujalte.pdf" download>
                 Hoja de vida
               </a>
           </button>

@@ -7,20 +7,21 @@
   }
 }
 
-@mixin section-title {
+@mixin section-title($size: 3rem) {
   text-align: center;
-  font-size: 3rem;
+  font-size: $size;
   font-variation-settings: "wght" 300, "CONT" 400;
   text-decoration: underline;
 }
 
-@mixin button-styles($width: 5rem, $height: 5rem, $top: 50%, $left: 90%) {
+@mixin button-styles($width: 5rem, $height: 5rem, $top: 50%, $left: 90%, $fontSize: 1rem) {
   position: relative;
   text-align: center;
   border: 1px solid black;
   overflow: hidden;
   @include text-styles;
   background-clip: text;
+  font-size: $fontSize;
   cursor: pointer;
   &:before,
   &:after {

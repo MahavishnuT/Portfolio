@@ -37,15 +37,39 @@
       justify-content: center;
       margin-top: 2rem;
       margin-bottom: 2rem;
-      img {
-        width: 3rem;
-        height: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #experience {
+    h2 {
+      @include section-title($size: 2rem);
+    }
+    .experience-wrapper {
+      width: 70%;
+      p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
       }
-      .logo {
-        img {
-          width: 3rem;
-          height: 3rem;
-        }
+      .last-span {
+        width: 50vw;
+        margin-top: 1.7rem;
+        text-align: center;
+        font-size: 0.7rem;
+      }
+      button {
+        margin: 1rem 0 0 0;
+        padding: 0.5rem 2rem;
+        @include button-styles($top: 40%, $left: 70%, $fontSize: 0.8rem);
+      }
+      .logos {
+        flex-direction: column;
+        gap: 0rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
       }
     }
   }
