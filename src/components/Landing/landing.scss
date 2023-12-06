@@ -26,6 +26,7 @@
         border: none;
         background: none;
         padding: 0;
+        min-width: 5rem;
       }
       &-list {
         min-width: 5rem;
@@ -37,8 +38,12 @@
         position: absolute;
         top: 100%;
         left: 0%;
-        border: 1px solid black;
-        
+        // border-bottom: 1px solid black;
+        // border-right: 1px solid black;
+        // border-left: 1px solid black;
+        outline: 1px solid black;
+        padding: 0rem 0.5rem;
+        transform: translate(0px, 0.4px);
         li {
           cursor: pointer;
           padding: 1rem 0.5rem;
@@ -179,6 +184,9 @@
       &-description {
         font-size: 0.9rem;
       }
+    }
+    .scroll-svg {
+      margin: 0rem auto 8rem auto;
     }
   }
 }

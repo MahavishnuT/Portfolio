@@ -60,21 +60,21 @@ function Experience() {
         <br />
         {i18n.language === "fr" && 
           <button>
-              <a href="/MyCV/CV_FR_BRU.pdf" download>
+              <a href={process.env.PUBLIC_URL + "/MyCV/CV_FR_BRU.pdf"} download>
                 CV
               </a>
           </button>
         }
         {i18n.language === "en" && 
           <button>
-              <a href="/MyCV/CV_ENG_BOG_Tom_Pujalte.pdf" download>
+              <a href={process.env.PUBLIC_URL + "/MyCV/CV_ENG_BOG_Tom_Pujalte.pdf"} download>
                 Resume
               </a>
           </button>
         }
         {i18n.language === "es" && 
           <button>
-              <a href="/MyCV/CV_ESP_BOG_Tom_Pujalte.pdf" download>
+              <a href={process.env.PUBLIC_URL + "/MyCV/CV_ESP_BOG_Tom_Pujalte.pdf"} download>
                 Hoja de vida
               </a>
           </button>
