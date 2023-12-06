@@ -1,0 +1,29 @@
+{
+  "landing": {
+    "nav": {
+      "about": "About me",
+      "works": "My projects"
+    },
+    "hero": {
+      "presentation": "Hello, I am",
+      "description": "I am a Front-End developer"
+    }
+  },
+  "experience": {
+    "title": "About me",
+    "text": "I have experienced several different paths that permitted me to obtain great versatility and a unique ability to adapt. Before coding, I went through studies in chemistry, physics and journalism, with a solo trip to Southeast Asia that allowed me to learn to fend for myself. I now live in Colombia, a country that I greatly appreciate, and I continue to practise my knowledge of React.",
+    "cv_text": "You can learn more bout me by downloading my resume",
+    "cv_download": "Resume",
+    "socials": "You can also find me on Linkedin and GitHub"
+  },
+  "works": {
+    "title": "My projects",
+    "wealth_health": "Switch a saas web application from jQuery to React to improve performance. Test runs with Google Lighthouse and comparison between the two versions. Create and deploy a NPM package for the modal.",
+    "argent_bank": "Create a web application that allows customers to log in and manage their accounts and profile using an API, and specify the  endpoints. Use of MangoDB.",
+    "sportsee": "Creation of a web application that retrieves user's data via an API, and display its sports statistics via the Recharts Javascript library",
+    "kasa": "Graphic redesign of an apartment rental website between individuals. Information retrieval from a database and dynamic display (carousels, drop-down menus...).",
+    "petits_plats": "Use of different algorithms to find and sort recipes in a web application. Search via a main bar, or by the use of tags.",
+    "fisheye": "Creation of a website for photographers that is accessible for people with visual disabilities. Use of a screen reader during creation of the website to ensure keyboard navigation is working well."
+  },
+  "contact": "Contact me"
+}
