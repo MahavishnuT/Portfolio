@@ -81,7 +81,7 @@ function WorkCardLeft({picture, title, text, link, logo1, logo2, logo3, logo4}) 
         <div className="card-text_description card-text_description_left">{text}</div>
         <div className="card-text_logos_github card-text_logos_github_left">
           <button className="github-button github-button_left">
-            <a href={link} target="_blank" rel="noreferrer">GitHub</a>
+            <a href={link} target="_blank" rel="noreferrer">Live Site</a>
           </button>
           <ul className="logos">
             {logo1 && <li className="logo-left"><img src={logo1} alt="logo of the tech used" /></li>}

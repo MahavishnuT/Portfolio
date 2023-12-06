@@ -80,7 +80,7 @@ function WorkCardRight({picture, title, text, link, logo1, logo2, logo3, logo4})
         <div className="card-text_description card-text_description_right">{text}</div>
         <div className="card-text_logos_github card-text_logos_github_right">
           <button className="github-button github-button_right">
-            <a href={link} target="_blank" rel="noreferrer">GitHub</a>
+            <a href={link} target="_blank" rel="noreferrer">Live Site</a>
           </button>
           <ul className="logos">
             {logo1 && <li className="logo-right"><img src={logo1} alt="logo of the tech used" /></li>}

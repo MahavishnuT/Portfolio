@@ -53,9 +53,9 @@ function Works() {
   return (
     <section id="works" ref={sectionRef}>
       <h2 className="works-title">{t('works.title')}</h2>
-      <WorkCardLeft picture={wealthHealth} title="Wealth Health" text={t('works.wealth_health')} link="https://github.com/MahavishnuT/Projet_14" logo1={reactLogo} logo2={sassLogo} logo3={reduxLogo}/>
-      <WorkCardRight picture={argentBank} title="ArgentBank" text={t('works.argent_bank')} link="https://github.com/MahavishnuT/Projet_13" logo1={reactLogo} logo2={sassLogo} logo3={reduxLogo}/>
-      <WorkCardLeft picture={sportsee} title="Sportsee" text={t('works.sportsee')} link="https://github.com/MahavishnuT/Projet_12" logo1={reactLogo} logo2={sassLogo}/>
+      <WorkCardLeft picture={wealthHealth} title="Wealth Health" text={t('works.wealth_health')} link="https://mahavishnut.github.io/Projet_14" logo1={reactLogo} logo2={sassLogo} logo3={reduxLogo}/>
+      <WorkCardRight picture={argentBank} title="ArgentBank" text={t('works.argent_bank')} link="https://mahavishnut.github.io/Projet_13" logo1={reactLogo} logo2={sassLogo} logo3={reduxLogo}/>
+      <WorkCardLeft picture={sportsee} title="Sportsee" text={t('works.sportsee')} link="https://mahavishnut.github.io/Projet_12" logo1={reactLogo} logo2={sassLogo}/>
       <WorkCardRight picture={kasa} title="Kasa" text={t('works.kasa')} link="https://mahavishnut.github.io/Projet_11/" logo1={reactLogo} logo2={sassLogo}/>
       <WorkCardLeft picture={petitsPlats} title="Les Petits Plats" text={t('works.petits_plats')} link="https://mahavishnut.github.io/Projet_7" logo1={htmlLogo} logo2={bootstrapLogo} logo3={javascriptLogo}/>
       <WorkCardRight picture={fisheye} title="FishEye" text={t('works.fisheye')} link="https://mahavishnut.github.io/Projet_6" logo1={htmlLogo} logo2={cssLogo} logo3={javascriptLogo}/>
