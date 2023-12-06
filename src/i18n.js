@@ -19,7 +19,7 @@ i18n
     debug: true,
     fallbackLng: 'en',
     backend: {
-      loadPath: 'Portfolio/locales/{{lng}}/{{ns}}.json',
+      loadPath: process.env.PUBLIC_URL + '/locales/{{lng}}/{{ns}}.json',
     },
   });
 
