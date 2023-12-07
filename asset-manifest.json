@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.202e3205.css",
-    "main.js": "/static/js/main.92519cd1.js",
+    "main.css": "/static/css/main.7c3537f6.css",
+    "main.js": "/static/js/main.d1d31743.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/fisheye.png": "/static/media/fisheye.3de527b86fdccbb14c7d.png",
     "static/media/kasa.png": "/static/media/kasa.e7085e8ce87aeb90f3f8.png",
     "static/media/argentBank.png": "/static/media/argentBank.9e486dcebd3eb231bade.png",
-    "static/media/Noise.png": "/static/media/Noise.12162783c2a17131d635.png",
     "static/media/wealth-health.png": "/static/media/wealth-health.912cda4ce35ea920e0d5.png",
     "static/media/petits-plats.png": "/static/media/petits-plats.cdc66b4435c8754c1a37.png",
     "static/media/sportsee.png": "/static/media/sportsee.0d1797d41b57fc557c65.png",
+    "static/media/Noise.png": "/static/media/Noise.1d24e55e499dde1c13ee.png",
     "static/media/KyivTypeSans.woff2": "/static/media/KyivTypeSans.6f9d8bc18ec7150d3fe7.woff2",
     "static/media/react.png": "/static/media/react.583b3750f3bd91a7ca61.png",
     "static/media/redux.png": "/static/media/redux.8d1933b0e78e52e33e2a.png",
@@ -20,12 +20,12 @@
     "static/media/javascript.png": "/static/media/javascript.41449f1af34cbef8f5d2.png",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.202e3205.css.map": "/static/css/main.202e3205.css.map",
-    "main.92519cd1.js.map": "/static/js/main.92519cd1.js.map",
+    "main.7c3537f6.css.map": "/static/css/main.7c3537f6.css.map",
+    "main.d1d31743.js.map": "/static/js/main.d1d31743.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.202e3205.css",
-    "static/js/main.92519cd1.js"
+    "static/css/main.7c3537f6.css",
+    "static/js/main.d1d31743.js"
   ]
 }
