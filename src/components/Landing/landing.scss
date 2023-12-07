@@ -29,7 +29,7 @@
         min-width: 5rem;
       }
       &-list {
-        min-width: 5rem;
+        min-width: 6rem;
         display: flex;
         flex-direction: column;
         list-style: none;
@@ -38,11 +38,8 @@
         position: absolute;
         top: 100%;
         left: 0%;
-        // border-bottom: 1px solid black;
-        // border-right: 1px solid black;
-        // border-left: 1px solid black;
         outline: 1px solid black;
-        padding: 0rem 0.5rem;
+        padding: 0rem 0rem;
         transform: translate(0px, 0.4px);
         li {
           cursor: pointer;
