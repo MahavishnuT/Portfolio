@@ -5,8 +5,11 @@ import bootstrapLogo from "../../logos/bootstrap.png"
 import htmlLogo from "../../logos/html5.png"
 import cssLogo from "../../logos/css3.png"
 import reduxLogo from "../../logos/redux.png"
+import nodeLogo from "../../logos/nodejs.png"
+import mySQLLogo from "../../logos/mysql.png"
 import wealthHealth from "../../projects pictures/wealth-health.png"
 import argentBank from "../../projects pictures/argentBank.png"
+import socialMedia from "../../projects pictures/socialMedia.png"
 import "./works.scss"
 import sportsee from "../../projects pictures/sportsee.png"
 import kasa from "../../projects pictures/kasa.png"
@@ -53,6 +56,7 @@ function Works() {
   return (
     <section id="works" ref={sectionRef}>
       <h2 className="works-title">{t('works.title')}</h2>
+      <WorkCardRight picture={socialMedia} title="SocialMedia" text={t('works.social_media')} link="https://github.com/MahavishnuT/social-media-fullstack" logo1={reactLogo} logo2={mySQLLogo} logo3={nodeLogo}/>
       <WorkCardLeft picture={wealthHealth} title="Wealth Health" text={t('works.wealth_health')} link="https://mahavishnut.github.io/Projet_14" logo1={reactLogo} logo2={sassLogo} logo3={reduxLogo}/>
       <WorkCardRight picture={argentBank} title="ArgentBank" text={t('works.argent_bank')} link="https://mahavishnut.github.io/Projet_13" logo1={reactLogo} logo2={sassLogo} logo3={reduxLogo}/>
       <WorkCardLeft picture={sportsee} title="Sportsee" text={t('works.sportsee')} link="https://mahavishnut.github.io/Projet_12" logo1={reactLogo} logo2={sassLogo}/>

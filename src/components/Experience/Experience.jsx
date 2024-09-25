@@ -10,11 +10,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const arrayLngs = {
   fr: {
-    url: "/MyCV/CV_FR_REM_Tom_Pujalte.pdf",
+    url: "/MyCV/CV_FR_Tom_Pujalte.pdf",
     text: "CV",
   },
   en: {
-    url: "/MyCV/CV_ENG_BOG_Tom_Pujalte.pdf",
+    url: "/MyCV/CV_ENG_Tom_Pujalte.pdf",
     text: "Resume",
   },
   es: {
