@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.7c3537f6.css",
-    "main.js": "/static/js/main.a5f7772a.js",
+    "main.js": "/static/js/main.7c3d4d17.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/fisheye.png": "/static/media/fisheye.3de527b86fdccbb14c7d.png",
     "static/media/kasa.png": "/static/media/kasa.e7085e8ce87aeb90f3f8.png",
     "static/media/argentBank.png": "/static/media/argentBank.9e486dcebd3eb231bade.png",
+    "static/media/socialMedia.png": "/static/media/socialMedia.e7f226c189b22c5e99ce.png",
     "static/media/wealth-health.png": "/static/media/wealth-health.912cda4ce35ea920e0d5.png",
     "static/media/petits-plats.png": "/static/media/petits-plats.cdc66b4435c8754c1a37.png",
     "static/media/sportsee.png": "/static/media/sportsee.0d1797d41b57fc557c65.png",
@@ -18,14 +19,16 @@
     "static/media/html5.png": "/static/media/html5.64e68073b46affef8c55.png",
     "static/media/bootstrap.png": "/static/media/bootstrap.4b4cf787d47810317944.png",
     "static/media/javascript.png": "/static/media/javascript.41449f1af34cbef8f5d2.png",
+    "static/media/mysql.png": "/static/media/mysql.1466a387ceff96835a90.png",
+    "static/media/nodejs.png": "/static/media/nodejs.076d96a17fb037271afa.png",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.7c3537f6.css.map": "/static/css/main.7c3537f6.css.map",
-    "main.a5f7772a.js.map": "/static/js/main.a5f7772a.js.map",
+    "main.7c3d4d17.js.map": "/static/js/main.7c3d4d17.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c3537f6.css",
-    "static/js/main.a5f7772a.js"
+    "static/js/main.7c3d4d17.js"
   ]
 }

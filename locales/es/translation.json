@@ -18,6 +18,7 @@
   },
   "works": {
     "title": "Mis proyectos",
+    "social_media": "Creación de un red social con React por el front y Node.js por el back, y MySQL para las bases de datos.",
     "wealth_health": "Cambiar una aplicación web interna de jQuery a React para mejorar el rendimiento. Realización de pruebas con Google Lighthouse y comparación entre ambas versiones. Creación e implementación de un paquete NPM para la modalidad.",
     "argent_bank": "Crear una aplicación web que permita a los clientes de iniciar sesión y gestionar sus cuentas y perfiles mediante el uso de una API, y especificar los endpoints. Uso de MangoDB.",
     "sportsee": "Realización de una aplicación web que recupera los datos del usuario a través de una API, para mostrar sus estadísticas deportivas a través de la librería Javascript Recharts",
