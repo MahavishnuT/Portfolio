@@ -14,6 +14,7 @@ import "./works.scss"
 import sportsee from "../../projects pictures/sportsee.png"
 import kasa from "../../projects pictures/kasa.png"
 import petitsPlats from "../../projects pictures/petits-plats.png"
+import pilar from "../../projects pictures/pilar.png"
 import fisheye from "../../projects pictures/fisheye.png"
 import WorkCardLeft from "../Work Cards/WorkCardsLeft"
 import WorkCardRight from "../Work Cards/WorkCardsRight"
@@ -56,7 +57,8 @@ function Works() {
   return (
     <section id="works" ref={sectionRef}>
       <h2 className="works-title">{t('works.title')}</h2>
-      <WorkCardRight picture={socialMedia} title="SocialMedia" text={t('works.social_media')} link="https://github.com/MahavishnuT/social-media-fullstack" logo1={reactLogo} logo2={mySQLLogo} logo3={nodeLogo}/>
+      <WorkCardLeft picture={pilar} title="Pilar" text={t('works.pilar')} link="https://rentpilar.brussels/" logo1={reactLogo} logo2={cssLogo} />
+      <WorkCardRight picture={socialMedia} title="SocialMedia" text={t('works.pilar')} link="https://github.com/MahavishnuT/social-media-fullstack" logo1={reactLogo} logo2={mySQLLogo} logo3={nodeLogo}/>
       <WorkCardLeft picture={wealthHealth} title="Wealth Health" text={t('works.wealth_health')} link="https://mahavishnut.github.io/Projet_14" logo1={reactLogo} logo2={sassLogo} logo3={reduxLogo}/>
       <WorkCardRight picture={argentBank} title="ArgentBank" text={t('works.argent_bank')} link="https://mahavishnut.github.io/Projet_13" logo1={reactLogo} logo2={sassLogo} logo3={reduxLogo}/>
       <WorkCardLeft picture={sportsee} title="Sportsee" text={t('works.sportsee')} link="https://mahavishnut.github.io/Projet_12" logo1={reactLogo} logo2={sassLogo}/>
