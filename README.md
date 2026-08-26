@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deploy (GitHub Pages + custom domain)
+
+This project is configured to deploy to the `gh-pages` branch automatically.
+
+```bash
+npm run deploy
+```
+
+What this does:
+- runs `npm run build`
+- publishes the `build/` folder to `gh-pages`
+- includes the custom domain through [public/CNAME](/home/tom/Bureau/Projets/Portfolio.worktrees/gh-pages-branch-issue-fix/public/CNAME)
+
 ## Available Scripts
 
 In the project directory, you can run:
